@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Quizzert</title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body onload="changeScreenTime()">
+        <div class="container-fluid" id="splash_Screen">
+            <h1>Welcome to <br> Quizzert</h1>
+        </div>
+
+        <div class="container-fluid" id="main_Screen">
+            <h1>Quizzert</h1>
+            <div id="line"></div><br>
+            <p id="intruction_Para">Choose your topic for the quiz</p>
+            <br><br>
+            <div class="container" id="quizTopic_Area">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="c1">
+                        <img class="img-responsive" src="Technology Thumbnail.png" onclick="techno_Clicked()" id="techno_EnterBtn"> 
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4" id="c1">
+                        <img class="img-responsive" src="Science Thumbnail.png" onclick="science_Clicked()" id="science_EnterBtn">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="c1">
+                        <img class="img-responsive" src="Engeenring Thumbnail.png" onclick="eng_Clicked()"  id="eng_EnterBtn">
+                    </div>
+                </div><br>
+                <img class="img-responsive" src="Maths Thumbnail.png" onclick="math_Clicked()" id="math_EnterBtn">
+            </div>
+        </div>
+
+        <div class="container-fluid" id="Quiz_Screen">
+            <button class="btn btn-danger" id="_BackBtn" onclick="Back()">←</button>
+            <h1 id="quizTitle">Quiz</h1>
+            <div id="line"></div><br>
+            <p id="Para">There will be 10 questions in the quiz. Answer each one wisely.<br>Double click on the option to select it.</p><bt></br><br><br><br><br><br><br>
+            <button class="btn btn-success" id="Quiz_Btn" onclick="Quiz_Start()">Start Quiz</button>
+        </div>
+
+        <div class="container-fluid" id="Quiz_Start">
+            <div class="container-fluid" id="QuizOn">   
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="TitleCol">
+                        <h1 id="Title">Quiz Title</h1>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="ControlCol">
+                        <div class="container-fluid" id="Control_Bar">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h1 id="TimeLeft_Lbl">2:00</h1>
+                                </div>
+            
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <button class="btn btn-danger" id="Finish_Btn" onclick="endQuiz()">Finish Quiz</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid" id="Quiz_Area">
+                    <div class="container" id="Question_Area">
+                        <h1 id="Question">Question</h1>
+                    </div>
+                    <hr>
+                    <div class="option_Area" id="Option_Area">
+                        <button id="op1" class="option" onclick="option_Clicked(this)">option 1</button>
+                        <button id="op2" class="option" onclick="option_Clicked(this)">option 2</button><br><br>
+                        <button id="op3" class="option" onclick="option_Clicked(this)">option 3</button>
+                        <button id="op4" class="option" onclick="option_Clicked(this)">option 4</button>
+                    </div>
+                    <hr>
+                    <div class="container" id="Control_Panel">
+                        <button class="btn btn-success" id="Submit_Btn" onclick="submitAnswer()">Submit Answer</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="container-fluid" id="endScreen">
+                <h1>THANK YOU FOR <br> TAKING THE QUIZ</h1>
+                <h2 id="QuizResult">Result</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h2 id="QuizResultInPercent">Result</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <button class="btn btn-danger" id="BackEndBTn" onclick="BackEnd()">Go To Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>

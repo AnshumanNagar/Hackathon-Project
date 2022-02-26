@@ -1,0 +1,266 @@
+body{
+    text-align: center;
+    cursor: context-menu;
+    background-color: #2b2a2a;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#splash_Screen{
+    height: 100%;
+    text-align: center;
+    background-color: #2b2a2a;
+}
+
+#splash_Screen h1{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:  crimson;
+    padding-top: 220px;
+    animation: fadeOut 2s linear forwards 3s;
+} 
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;} 
+} 
+
+#main_Screen{
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2a2a;
+}
+
+#quizTopic_Area .row{
+    text-align: center;
+}
+
+#c1{
+    padding-left: 60px;
+}
+
+#math_EnterBtn{
+    margin-left: 45px;
+}
+
+#quizTopic_Area img{
+    cursor: pointer;
+    border-radius: 100%;
+    width: 225px;
+    height: 225px;
+}
+
+#main_Screen h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+}
+
+#intruction_Para{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+}
+
+#line{
+    height: 2px;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#Quiz_Screen{
+    text-align: center;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #2b2a2a;
+}
+
+#Quiz_Screen h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+
+}
+
+#Quiz_Btn{
+    width: 500px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#Para{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 10px;
+    background-color: crimson;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#_BackBtn{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: -1200px;
+    margin-bottom: -80px;
+    margin-top: 20px;
+}
+
+#Quiz_Start{
+    display: none;
+    padding-bottom: 42px;
+    width: 100%;
+    background-color: #2b2a2a;
+}
+
+#Control_Bar{
+    background-image: linear-gradient(90deg, cornflowerblue 50%, crimson 50%);
+    width: 500px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 25px;
+    border-width: 2px crimson solid;
+    border-radius: 5px;
+}
+
+#TimeLeft_Lbl{
+    padding: 10px;
+    background-color: cornflowerblue;
+    cursor: context-menu;
+    color: white;
+    border-radius: 5px;
+}
+
+#Finish_Btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(173, 6, 6);
+    border: white 1px solid;
+}
+
+#Title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#ControlCol{
+    padding-left: 500px;
+}
+
+#Quiz_Area{
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+#Option_Area button{
+    width: 500px;
+    height: 80px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    border-width: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-color: cornflowerblue;
+    border-style: solid;
+}
+
+#Option_Area button:hover{
+    background-color: white;
+    color: cornflowerblue;
+    border-width: 2px;
+}
+
+#Control_Panel button{
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#Question{
+    padding: 15px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#endScreen{
+    display: none;
+    text-align: center;
+    padding-top: 120px;
+    background-color: #2b2a2a;
+    width: 100%;
+    height: 100%;
+}
+
+#endScreen h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    background-color: crimson;
+    font-size: 80px;
+    border-radius: 5px;
+}
+
+#endScreen h2{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    background-color: cornflowerblue;
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+#QuizResultInPercent{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    width: 100%;
+    background-color: cornflowerblue;
+    font-size: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#BackEndBTn{
+    width: 100%;
+    height: 85px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
